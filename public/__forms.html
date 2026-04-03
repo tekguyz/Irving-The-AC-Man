@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netlify Forms Detection</title>
+</head>
+<body>
+    <!-- This file is used by Netlify to detect forms in Next.js App Router projects -->
+    <form name="irving-acman-leads" data-netlify="true" hidden>
+        <input type="text" name="fullName" />
+        <input type="tel" name="phone" />
+        <input type="email" name="email" />
+        <select name="service">
+            <option value="Emergency">Emergency / Same-Day Service</option>
+            <option value="Repair">AC Repair & Diagnostics</option>
+            <option value="Install">New AC Installation</option>
+            <option value="Maintenance">Preventive Maintenance</option>
+            <option value="Commercial">Commercial HVAC</option>
+            <option value="Ducts">Duct Cleaning</option>
+            <option value="Unsure">Not Sure — Just Need Help</option>
+        </select>
+        <input type="text" name="brand" />
+        <textarea name="message"></textarea>
+        <div data-netlify-honeypot="bot-field">
+            <input name="bot-field" />
+        </div>
+    </form>
+</body>
+</html>

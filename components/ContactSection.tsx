@@ -10,15 +10,31 @@ export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+      } else {
+        console.error("Form submission failed");
+        // Fallback to success for demo purposes if needed, but better to show error
+        // setIsSuccess(true); 
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
-    }, 1500);
+    }
   };
 
   return (
@@ -133,6 +149,7 @@ export default function ContactSection() {
                       onSubmit={handleSubmit}
                       name="irving-acman-leads"
                       data-netlify="true"
+                      data-netlify-honeypot="bot-field"
                       className="flex flex-col gap-5"
                     >
                       <input type="hidden" name="form-name" value="irving-acman-leads" />
