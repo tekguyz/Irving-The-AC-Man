@@ -9,7 +9,7 @@ export default function NotFound() {
         Page Not Found
       </h1>
       <p className="text-muted text-lg md:text-xl mb-8">
-        Let's get you back to the cool side.
+        Let&apos;s get you back to the cool side.
       </p>
       <Link
         href="/"

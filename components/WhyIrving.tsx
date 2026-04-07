@@ -58,7 +58,7 @@ export default function WhyIrving() {
 
               <div className="mt-10 border-l-4 border-primary pl-4 sm:pl-6 py-2">
                 <p className="text-white italic text-lg leading-relaxed">
-                  "{COPY.ABOUT_QUOTE}"
+                  &quot;{COPY.ABOUT_QUOTE}&quot;
                 </p>
                 <p className="text-primary font-bold mt-3">
                   — {BRAND.OWNER}, Owner

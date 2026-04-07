@@ -76,7 +76,7 @@ export default function ReviewsSection() {
                 <div className="text-yellow-400 text-lg mb-4">⭐⭐⭐⭐⭐</div>
                 
                 <p className="text-navy font-medium text-base leading-relaxed italic mb-6 flex-grow">
-                  "{review.quote}"
+                  &quot;{review.quote}&quot;
                 </p>
                 
                 <div className="flex items-center gap-4 mt-auto">
@@ -107,7 +107,7 @@ export default function ReviewsSection() {
         <div className="text-center">
           <RevealOnScroll delay={200} direction="up">
             <a
-              href="https://www.google.com/maps"
+              href="https://maps.app.goo.gl/fMRDzNpwjuuCotWu6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border-2 border-primary text-primary font-bold rounded-full px-8 py-3 hover:bg-primary hover:text-white transition-colors duration-300 focus-ring"

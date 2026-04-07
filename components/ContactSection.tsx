@@ -142,7 +142,7 @@ export default function ContactSection() {
                   <>
                     <h3 className="text-navy font-bold text-2xl mb-2">Request a Free Quote</h3>
                     <p className="text-muted text-sm mb-8">
-                      No obligation. We'll respond within the hour.
+                      No obligation. We&apos;ll respond within the hour.
                     </p>
 
                     <form 
@@ -154,7 +154,7 @@ export default function ContactSection() {
                     >
                       <input type="hidden" name="form-name" value="irving-acman-leads" />
                       <p className="hidden">
-                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        <label>Don&apos;t fill this out if you&apos;re human: <input name="bot-field" /></label>
                       </p>
 
                       <div>
@@ -193,7 +193,7 @@ export default function ContactSection() {
 
                       <div>
                         <label htmlFor="message" className="block text-navy text-sm font-bold mb-2">Message (Optional)</label>
-                        <textarea id="message" name="message" rows={3} className="w-full min-h-[48px] border border-gray-300 rounded-lg px-4 py-3 text-navy focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary resize-none focus-ring"></textarea>
+                        <textarea id="message" name="message" rows={3} placeholder="Tell us what&apos;s going on..." className="w-full min-h-[48px] border border-gray-300 rounded-lg px-4 py-3 text-navy focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary resize-none focus-ring"></textarea>
                       </div>
 
                       <button

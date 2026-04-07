@@ -7,7 +7,15 @@
 </head>
 <body>
     <!-- This file is used by Netlify to detect forms in Next.js App Router projects -->
-    <form name="irving-acman-leads" data-netlify="true" hidden>
+    <form 
+        name="irving-acman-leads" 
+        data-netlify="true" 
+        netlify-honeypot="bot-field" 
+        encType="multipart/form-data"
+        action="/forms.html"
+        hidden
+    >
+        <input type="hidden" name="form-name" value="irving-acman-leads" />
         <input type="text" name="fullName" />
         <input type="tel" name="phone" />
         <input type="email" name="email" />
@@ -22,9 +30,7 @@
         </select>
         <input type="text" name="brand" />
         <textarea name="message"></textarea>
-        <div data-netlify-honeypot="bot-field">
-            <input name="bot-field" />
-        </div>
+        <input name="bot-field" />
     </form>
 </body>
 </html>

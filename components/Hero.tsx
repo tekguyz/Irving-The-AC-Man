@@ -8,12 +8,12 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1920&q=80"
-          alt="HVAC technician working on AC unit"
+          src="https://plus.unsplash.com/premium_photo-1664301972519-506636f0245d?q=80&w=1920&auto=format&fit=crop"
+          alt="Professional HVAC technician servicing an air conditioning unit"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-[75%_center] lg:object-right-top"
           referrerPolicy="no-referrer"
         />
       </div>
@@ -22,13 +22,19 @@ export default function Hero() {
       <div 
         className="absolute inset-0 z-10"
         style={{
-          background: "linear-gradient(to right, oklch(15% 0.04 264 / 95%) 0%, oklch(15% 0.04 264 / 70%) 55%, oklch(15% 0.04 264 / 30%) 100%)"
+          background: "linear-gradient(to right, oklch(15% 0.04 264 / 98%) 0%, oklch(15% 0.04 264 / 85%) 40%, oklch(15% 0.04 264 / 40%) 70%, transparent 100%)"
+        }}
+      />
+      <div 
+        className="absolute inset-0 z-10 lg:hidden"
+        style={{
+          background: "oklch(15% 0.04 264 / 40%)"
         }}
       />
       <div 
         className="absolute inset-0 z-10"
         style={{
-          background: "linear-gradient(to top, oklch(15% 0.04 264) 0%, transparent 45%)"
+          background: "linear-gradient(to top, oklch(15% 0.04 264) 0%, transparent 35%)"
         }}
       />
 

@@ -19,7 +19,7 @@ export default function Footer() {
                 Licensed HVAC Contractor
               </span>
               <p className="text-white/60 italic text-sm mt-4 max-w-xs">
-                "{COPY.FOOTER_TAGLINE}"
+                &quot;{COPY.FOOTER_TAGLINE}&quot;
               </p>
               <p className="text-muted text-xs mt-4">
                 Lic. {BRAND.LICENSE}
